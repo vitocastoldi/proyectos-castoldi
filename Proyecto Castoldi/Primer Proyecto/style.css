@@ -1,0 +1,217 @@
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  
+}
+
+/*--------------------------- seccion FUENTES ---------------------------------------------------*/
+
+ h2, h4{
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/*---------------------- seccion HEADER -----------------------------*/
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: justify;
+}
+
+header {
+  background-color: #ff6600;
+  color: #000;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 60px;
+}
+
+/* ----------------------- seccion NAV BAR --------------------------------------*/
+nav {
+  background-color: #333;
+  padding: 0.5rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #aaa;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+.exitos, .filmografia {
+  padding: 2rem;
+}
+
+.exitos h2, .filmografia h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Josefin Sans', sans-serif;
+}
+/*--------------------------------- seccion INTRODUCCION ------------------------------*/
+.intro {
+  display: flex;
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 10px;
+  max-width: fit-content;
+}
+
+.intro .imgIntro{
+  flex: 1;
+  max-width: 50%;
+  margin-right: 20px;
+}
+
+.intro .descripIntro{
+  flex: 1;
+}
+
+.intro .imgIntro,
+.intro .descripIntro{
+  align-self: center;
+}
+
+.descripIntro p{
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.descripIntro h4{
+  color: #ff6600;
+}
+
+.intro .imgIntro img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/*-------------------------------------- seccion EXITOS -------------------------------------*/
+.peliculas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 1.5rem;
+  justify-content: space-around;
+}
+
+.pelicula {
+  background-color: #222;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.8s, box-shadow 0.8s;
+}
+
+.pelicula img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.pelicula:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.titulo-pelicula {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.info-pelicula {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #aaa;
+}
+
+.sinopsis {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*----------------------------------- seccion IMG Scorsese 2 --------------------------------------*/
+.imgScorsese2 {
+  border: 1px solid #333;
+  padding: 0px;
+  margin: 0px;
+  max-width: fit-content;
+}
+
+.imgScorsese2 img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*-------------------------------------- seccion SOBRE Scorsese -----------------------------------*/
+.sobre {
+  padding: 2rem;
+  background-color: #ff9900;
+  color: #222;
+}
+
+.sobre h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.sobre p {
+  text-align: justify;
+}
+
+
+
+/*------------------------------------ seccion FOOTER --------------------------------------*/
+footer {
+  background-color: #ff6600;
+  color: #000;
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  
+}
+
+/*-------------------------- seccion MediaQuerys -----------------------------------------------*/
+@media screen and (max-width: 768px) {
+  header {
+    padding: 30px; 
+  }
+
+  .peliculas {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  }
+
+  .pelicula {
+    padding: 1rem; 
+  }
+}
